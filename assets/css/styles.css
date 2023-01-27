@@ -1,0 +1,77 @@
+:root {
+  --app-spacing--default: 16px;
+  --app-color--primary-main: #D946EF;
+  --app-color--text-dark: #0F172A;
+}
+
+#mc_embed_signup{}
+#mc-embedded-subscribe-form {margin: 0!important}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--app-spacing--default);
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: var(--app-spacing--default);
+  font-family: "Montserrat", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 16px;
+  color: var(--app-color--text-dark);
+  -webkit-font-smoothing: antialiased;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+article {
+  margin-top: var(--app-spacing--default);
+}
+
+blockquote {
+  display: flex;
+  flex-direction: column;
+  padding: var(--app-spacing--default);
+  line-height: 1.75rem;
+}
+
+h1 {
+  padding-bottom: var(--app-spacing--default);
+}
+
+p {
+  line-height: 1.5rem;
+  padding: calc(var(--app-spacing--default) / 1.5) 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .logo {
+    width: 103.125px;
+    height: 25px;
+  }
+
+  .icon {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  header {
+    margin-top: calc(var(--app-spacing--default) * 8);
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
